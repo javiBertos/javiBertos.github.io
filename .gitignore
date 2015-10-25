@@ -1,6 +1,2 @@
-nbproject
-.idea
-*.iml
-.DS_Store
-.vagrant
-.deployment
+_site
+.sass-cache

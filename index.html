@@ -1,47 +1,23 @@
-<!DOCTYPE html>
-<html lang="en" ng-app="javiBertos" class="no-js">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>javiBertos</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- Angular Material CSS now available via Google CDN; version 0.8 used here -->
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.8.3/angular-material.min.css"> 
-  </head>
-  <body layout="column" layout-fill ng-controller="MainApp">
-    <md-toolbar layout="row">
-      <button ng-click="toggleSidenav('left')" hide-gt-sm class="menuBtn">
-        Menu
-      </button>
-      <h1 class="md-toolbar-tools" layout-align-gt-sm="center">javiBertos ...coming soon...</h1>
-    </md-toolbar>
+---
+layout: default
+---
 
-    <div layout="row" flex>
-      <md-sidenav layout="column" class="md-sidenav-left" md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')">
-        <ul class="menu">
-          <li><a href="#/home">Home</a></li>
-        </ul>
-      </md-sidenav>
+<div class="home">
 
-      <div layout="column" flex layout-fill id="content">
-        <md-content layout="column" flex layout-fill class="md-padding">
-          <div ng-view></div>
-        </md-content>
-      </div>
-    </div>
+  <h1 class="page-heading">Posts</h1>
 
-    <!-- Angular Material Dependencies -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-route.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-animate.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-aria.min.js"></script>
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
 
-    <!-- Angular Material Javascript now available via Google CDN; version 0.8 used here -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.8.3/angular-material.min.js"></script>
-    <script src="/js/app.js"></script>
-    <script src="/views/home/home.js"></script>
-  </body>
-</html>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
