@@ -20,7 +20,7 @@
     h3
         color #c06a64
         position relative
-        margin rem(10px) 0
+        margin rem(10px) rem(10px)
         &:before
             content ""
             width 100px
@@ -39,8 +39,6 @@
             stack()
         a
             text-transform lowercase
-            +above(cut)
-                col(4.2/6)
             text-decoration none
             border none
         .date
@@ -58,7 +56,10 @@
                 background-color rgba(199, 178, 136, 0.32)
             +above(cut)
                 text-align left
-                margin-left rem(-10px)
                 display initial
                 font-size rem(17px)
                 text-decoration none
+        .post-date
+            color: #fff
+            display: block
+            padding-left: rem(10px)

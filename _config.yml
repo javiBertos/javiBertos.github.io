@@ -1,8 +1,8 @@
 # Site settings
 title: Javi Bertos - Javivi - Web Developer
 description: "A blog about lorem ipsum ..."
-baseurl: "/" # for test: remove string '/space-jekyll-template' to ''
-url: "http://javibertos.github.io" # for test: remove string 'http://victorvoid.github.io' to '' but in production: 'https://yourusername.githu.io'
+baseurl: "" # for test: remove string '/space-jekyll-template' to ''
+url: "https://javibertos.github.io/" # for test: remove string 'http://victorvoid.github.io' to '' but in production: 'https://yourusername.githu.io'
 
 # User settings
 username: Javi(vi) Bertos
@@ -46,16 +46,17 @@ links:
       url: /about
       key_trigger: 5
   section_2:
-    - title: github
-      url: http://www.github.com/javibertos
-      new_tab: true
-      key_trigger: g
-    - title: twitter
-      url: http://www.twitter.com/javibertos
-      key_trigger: t
     - title: search
       url: ""
       key_trigger: s #WARNING: search only works with "s"
+  section_3:
+    - title: github
+      url: https://www.github.com/javibertos
+      new_tab: true
+      external: true
+    - title: twitter
+      url: https://www.twitter.com/javibertos
+      external: true
 
 # projects in header index
 projects:

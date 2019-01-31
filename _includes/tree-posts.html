@@ -8,6 +8,7 @@
         <div class="content">
             <a title="Open the post" href="{{ post.url | prepend: site.baseurl }}">
                 <h2 class="post-title" itemprop="name">{{ post.title | replace: ' ','-'}}.md</h2>
+                <small class="post-date">{{ post.date | date_to_string }}</small>
             </a>
         </div>
     </article>
