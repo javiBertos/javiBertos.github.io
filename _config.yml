@@ -1,8 +1,8 @@
 # Site settings
 title: Javi Bertos - Javivi - Web Developer
 description: "A blog about lorem ipsum ..."
-baseurl: "" # for test: remove string '/space-jekyll-template' to ''
-url: "http://victorvoid.github.io/space-jekyll-template/" # for test: remove string 'http://victorvoid.github.io' to '' but in production: 'https://yourusername.githu.io'
+baseurl: "/" # for test: remove string '/space-jekyll-template' to ''
+url: "http://javibertos.github.io" # for test: remove string 'http://victorvoid.github.io' to '' but in production: 'https://yourusername.githu.io'
 
 # User settings
 username: Javi(vi) Bertos
