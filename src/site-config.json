@@ -1,0 +1,13 @@
+{
+  "site": {
+    "url": "https://javiBertos.github.io",
+    "name": "Javi Bertos",
+    "description": "Javi Bertos personal page",
+    "year": "2022"
+  },
+  "author": {
+    "name": "JaviBertos",
+    "site": "https://javiBertos.github.io/",
+    "email": "yo@javierbertos.name"
+  }
+}

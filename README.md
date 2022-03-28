@@ -1,126 +1,70 @@
-# Space Jekyll
+# Getting Started with Create React App
 
-A simple and elegant Jekyll theme based on Spacemacs. The theme works well on mobile devices as well.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-See a live demo [here](https://victorvoid.github.io/space-jekyll-template/).
+## Available Scripts
 
-![](https://github.com/victorvoid/space-jekyll-template/blob/master/screenshot.png?raw=true)
+In the project directory, you can run:
 
-# Site/User Settings
+### `npm start`
 
-customize your site in ``_config.yml``
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-```ruby
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-# Site settings
-description: A blog about lorem ipsum
-baseurl: "" # the subpath
-url: "" # the base hostname &/|| protocol for your site
+### `npm test`
 
-# User settings
-username: Lorem Ipsum
-user_description: Lorem Developer
-user_title: Lorem Ipsum
-email: lorem@ipsum.com
-twitter_username: loremipsum
-github_username:  loremipsum
-gplus_username:  loremipsum
-disqus_username: loremipsum
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-```
+### `npm run build`
 
-See more about project and links in [_config.yml](./_config.yml)
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## How to create a post ?
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-_posts create a file .md with structure:
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-```md
----
-layout: post
-title: "Lorem ipsum speak.."
-date: 2016-09-13 01:00:00
-image: '/assets/img/post-image.png'
-description: 'about tech'
-tags:
-- lorem
-- tech
-categories:
-- Lorem ipsum
-twitter_text: 'How to speak with Lorem'
----
-```
+### `npm run eject`
 
-## How to insert new links on menu navigation ?
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-![](https://github.com/victorvoid/space-jekyll-template/blob/master/src/img/menu.png)
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-You should open `_config.yml` and change/add `links` section:
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-```yaml
-links:
-  section_1: # you can use any name
-    - title: home # show on menu
-      url: / #link
-      key_trigger: 1 # link shortcut and show on the left of the title
-    - title: my posts
-      url: /posts
-      key_trigger: 2
-    - title: series
-      url: /series
-      key_trigger: 3
-    - title: tags
-      url: /tags
-      key_trigger: 4
-    - title: about me
-      url: /about
-      key_trigger: 5
-```
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-Frontend Technologies
----------------------
-* [Gulp](https://gulpjs.com/): The streaming build system.
-* [Stylus](http://stylus-lang.com/): expressive, dynamic, robust CSS.
-* [BrowserSync](https://www.browsersync.io/): Time-saving synchronised browser testing.
-* [Rupture](https://github.com/jescalan/rupture): Simple media queries for stylus.
-* [Kouto-Swiss](http://kouto-swiss.io/): A complete CSS framework for Stylus.
-* [Jeet](http://jeet.gs/): A grid system for human.
-* [Zepto.js](http://zeptojs.com/): The aerogel-weight jQuery-compatible JavaScript library.
+## Learn More
 
-## How can I modify the theme ?
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-First, install [jekyll](https://jekyllrb.com/) and [node.js](https://nodejs.org/).
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-1. Fork the theme with your username, example: `charlie.github.io`
-2. Clone repository to your computer
-3. run `npm install`
-4. run `gulp`
-5. Be happy by modifying the files
+### Code Splitting
 
-**Space Jekyll** uses the [Stylus](http://stylus-lang.com/) to process his css, then modifies the style of the theme in [this folder](https://github.com/victorvoid/space-jekyll-template/tree/master/src/styl).
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-You can go in the [variable.styl](https://github.com/victorvoid/space-jekyll-template/blob/master/src/styl/_variables.styl) and modify the colors. 
+### Analyzing the Bundle Size
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-## License
-The MIT License (MIT)
+### Making a Progressive Web App
 
-Copyright (c) 2016 Victor Igor
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+### Advanced Configuration
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
