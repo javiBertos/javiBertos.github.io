@@ -33,9 +33,9 @@ twitter_username: javibertos
 github_username:  javibertos
 
 # Build settings
-theme: jekyll-theme-hacker
-plugins:
-  - jekyll-feed
+# theme: jekyll-theme-hacker
+# plugins:
+#   - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
